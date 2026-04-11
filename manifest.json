@@ -1,0 +1,20 @@
+{
+  "name": "Русский — Daily Word Reminder",
+  "short_name": "Русский",
+  "description": "45 mots par jour · 1000 jours pour maîtriser le russe",
+  "start_url": "/Mon-site/",
+  "scope": "/Mon-site/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0a0e1a",
+  "theme_color": "#e8c84a",
+  "lang": "fr",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><rect width='192' height='192' fill='%230a0e1a' rx='24'/><text x='50%' y='55%' font-size='120' text-anchor='middle' dominant-baseline='middle'>🇷🇺</text></svg>",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
