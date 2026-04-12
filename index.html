@@ -1,32 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Genius Math Application</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Напоминание о словах</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f9f9f9; }
+        .container { width: 50%; margin: auto; padding: 20px; background-color: #fff; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); }
+        h1 { text-align: center; }
+        .word { font-size: 24px; font-weight: bold; margin: 20px 0; }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to the Genius Math Application</h1>
-    </header>
-    <main>
-        <section>
-            <h2>Features</h2>
-            <ul>
-                <li>Interactive Math Problems</li>
-                <li>Detailed Solutions and Explanations</li>
-                <li>Progress Tracking</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Try it Now!</h2>
-            <button>Start Learning</button>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2026 Genius Math Application</p>
-    </footer>
+    <div class="container">
+        <h1>Ежедневное напоминание о словах</h1>
+        <div class="word">Слово дня: <span id="daily-word"></span></div>
+    </div>
+    <script>
+        const words = ['доброта', 'счастье', 'дружба', 'любовь', 'надежда'];
+        const randomWord = words[Math.floor(Math.random() * words.length)];
+        document.getElementById('daily-word').textContent = randomWord;
+    </script>
 </body>
 </html>
